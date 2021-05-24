@@ -1,12 +1,13 @@
 import React from "react";
 
+
 const Sidebar = () => {
   return (
     <div className="side">
       <h2>About Me</h2>
       <h5>Photo of me:</h5>
       <div className="images">
-        <img src="https://picsum.photos/300/200" width="auto" alt="" />
+        <img src="../assets/img/BeautyPlus_20200828162818102_save.jpg" width="auto" alt="" />
       </div>
       <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
       <h3>More Text</h3>
