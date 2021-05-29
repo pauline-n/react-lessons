@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Button } from 'react-bootstrap';
+import { Button, Form, Row, Col } from 'react-bootstrap';
 
 // GENERICS IN TYPESCRIPT ...
 // useEffect,useState
 // Form Component => Function based component
-const Form = (props:any) => {
+const AmForm = (props:any) => {
   // useState
   const [todo, setTodo] = useState("");
  
@@ -21,13 +21,26 @@ const Form = (props:any) => {
   };
   
   return (
+    <div>
+
+    <Form>
+  <Row>
+    <Col>
+      <Form.Control placeholder="First name" />
+    </Col>
+    <Col>
+      <Form.Control placeholder="Last name" />
+    </Col>
+  </Row>
+</Form>
     <form onSubmit={Submit}>
       <input type="text" onChange={handleChange} className="form-control form-control-sm custom" />
       <Button variant="primary" size="lg" block type="submit">
         Add task
       </Button>
     </form>
+    </div>
   );
 };
 
-export default Form;
+export default AmForm;
