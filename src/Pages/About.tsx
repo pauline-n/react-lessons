@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react'
+// import 
 
-
-const Sidebar = () => {
-  return (
-    <div className="side">
+function About() {
+    return (
+        <div>
+        
       <h2>Get to know Me</h2>
       <h5>Photo of me:</h5>
       <div className="images">
@@ -23,8 +24,8 @@ const Sidebar = () => {
       <div className="images">
         <img src="https://picsum.photos/303/60" width="auto" alt="" />
       </div>
-    </div>
-  );
-};
+        </div>
+    )
+}
 
-export default Sidebar;
+export default About

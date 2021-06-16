@@ -1,18 +1,16 @@
 import React from "react";
 import "./assets/css/App.css";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Webpage from "./Pages/routes";
+
 function App() {
   return (
     <div> 
-      <Header />
-      <div className="row">
+      <Webpage />
+      {/* <div className="row">
         <Sidebar />
         <Main />
       </div>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
